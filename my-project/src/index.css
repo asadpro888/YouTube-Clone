@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+::-webkit-scrollbar{
+  background-color: black;
+}
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+}
+.videos{
+  flex: 1;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
+  gap: 4px;
+}
+.navbar{
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.input{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 15px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: #242424
+}
+.input::placeholder{
+  color: #242424
+}
+.bttn{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 50%;
+font-size: 26px;
+padding: 9px; 
+margin-left: 5px;
+margin-right: 30px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.icon{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 50%;
+font-size: 36px;
+padding: 9px; 
+margin-left: 5px;
+margin-right: 20px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
